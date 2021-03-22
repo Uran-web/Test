@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;
+    0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+<!--Head started-->
+<body>
+<!--Header start-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="{% static 'img/q.png' %}" alt="It Blog">
+                <div class="header__logo-name">Hacker News</div>
+            </div>
+            <nav class="nav">
+                <a class="nav__link">new</a>
+                <a class="nav__link">past</a>
+                <a class="nav__link">comments</a>
+                <a class="nav__link">ask</a>
+                <a class="nav__link">show</a>
+                <a class="nav__link">jobs</a>
+                <a class="nav__link">submit</a>
+            </nav>
+            <div class="log-form">Logging</div>
+        </div>
+    </div>
+</header> <!--End of header-->
+
+{% block content %}{% endblock %}
+
+{% block footer %}{% endblock %}
+</body>
+</html>

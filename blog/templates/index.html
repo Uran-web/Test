@@ -1,0 +1,13 @@
+{% extends "base_page.html" %}
+
+{% block content %}
+
+    {% if title-list %}
+        {% for post_title in title-list %}
+            <li>
+                <a href="{{ post.get_absolute_url_info }}"> {{ post.title_name }} </a>
+            </li>
+        {% endfor %}
+    {% endif %}
+
+{% endblock content %}
